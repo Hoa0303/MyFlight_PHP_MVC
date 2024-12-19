@@ -1,0 +1,74 @@
+body {
+	font-family: sans-serif;
+	padding: 1rem;
+}
+
+nav {
+	margin-bottom: 1rem;
+}
+
+table {
+	border-collapse: collapse;
+	margin-top: 1rem;
+}
+
+table,
+th,
+td {
+	border: 1px solid black;
+	padding: 0.5rem;
+}
+
+form {
+	display: table;
+}
+
+form div {
+	display: table-row;
+}
+
+form label {
+	display: table-cell;
+}
+
+form input {
+	display: table-cell;
+	margin-top: 1rem;
+	margin-left: 5px;
+}
+
+form button {
+	margin-top: 1rem;
+}
+
+.avatar {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+}
+
+#flash-message {
+	-moz-animation: cssAnimation 0s ease-in 5s forwards;
+	/* Firefox */
+	-webkit-animation: cssAnimation 0s ease-in 5s forwards;
+	/* Safari and Chrome */
+	-o-animation: cssAnimation 0s ease-in 5s forwards;
+	/* Opera */
+	animation: cssAnimation 0s ease-in 5s forwards;
+	-webkit-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
+}
+@keyframes cssAnimation {
+	to {
+		width: 0;
+		height: 0;
+		overflow: hidden;
+	}
+}
+@-webkit-keyframes cssAnimation {
+	to {
+		width: 0;
+		height: 0;
+		visibility: hidden;
+	}
+}
